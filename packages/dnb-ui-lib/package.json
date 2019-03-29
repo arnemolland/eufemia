@@ -49,6 +49,7 @@
     "publish:postpack": "yarn pack && nodemon --exec 'babel-node ./scripts/release/postpack.js' ",
     "reset": "rm -rf ./node_modules ./components ./elements ./es ./icons ./patterns ./shared ./style ./umd",
     "start": "yarn story",
+    "static": "nodemon --exec 'babel-node ./scripts/tools/convertReactToStaticHTML.js' ",
     "story": "start-storybook -s / -p 8002 --ci",
     "story:build": "build-storybook",
     "t": "jest --watch --testPathPattern ",
