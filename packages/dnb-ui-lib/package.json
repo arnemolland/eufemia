@@ -71,7 +71,8 @@
     "prettier:package": "prettier-package-json --write ./package.json",
     "prettier:styles": "prettier --loglevel warn --parser scss --write 'src/**/*.scss'",
     "prettier:styles:staged": "prettier --loglevel warn --parser scss",
-    "umd:dev": "nodemon -x 'yarn umd' --ext js,html,json,css,scss --watch './src/components/**/*' --watch './src/patterns/**/*' --watch './src/style/**/*' --watch './scripts/**/*' --ignore '*.json'"
+    "umd:dev": "nodemon -x 'yarn umd' --ext js,html,json,css,scss --watch './src/components/**/*' --watch './src/patterns/**/*' --watch './src/style/**/*' --watch './scripts/**/*' --ignore '*.json'",
+    "vars": "nodemon --exec 'babel-node ./scripts/tools/vars' --ignore '*.json'"
   },
   "dependencies": {
     "@babel/runtime": "^7.4.3",
@@ -159,6 +160,7 @@
     "ora": "^3.4.0",
     "packpath": "^0.1.0",
     "postcss-calc": "^7.0.1",
+    "postcss-extract-custom-properties": "^0.1.2",
     "postcss-preset-env": "^6.6.0",
     "prettier": "^1.17.0",
     "prettier-package-json": "^2.1.0",
