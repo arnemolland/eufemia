@@ -26,22 +26,21 @@ describe('Space screenshot', () => {
     })
     expect(screenshot).toMatchImageSnapshot()
   })
-  // looks like this is not working well
-  it.skip('have to match the spacing method 1', async () => {
+  it('have to match the spacing method 1', async () => {
     const screenshot = await testPageScreenshot({
-      selector: '[data-dnb-test="spacing-method-1"]'
+      selector: '[data-dnb-test="spacing-method-space"]'
     })
     expect(screenshot).toMatchImageSnapshot()
   })
   it('have to match the spacing method 2', async () => {
     const screenshot = await testPageScreenshot({
-      selector: '[data-dnb-test="spacing-method-2"]'
+      selector: '[data-dnb-test="spacing-method-form-row"]'
     })
     expect(screenshot).toMatchImageSnapshot()
   })
   it('have to match the spacing method 3', async () => {
     const screenshot = await testPageScreenshot({
-      selector: '[data-dnb-test="spacing-method-3"]'
+      selector: '[data-dnb-test="spacing-method-component"]'
     })
     expect(screenshot).toMatchImageSnapshot()
   })
