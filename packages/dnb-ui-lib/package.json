@@ -104,6 +104,7 @@
     "@emotion/babel-plugin-core": "^0.6.9",
     "@emotion/core": "^10.0.15",
     "@emotion/styled": "^10.0.15",
+    "@jedmao/semantic-release-npm-github-config": "^1.0.6",
     "@storybook/react": "^5.1.10",
     "@svgr/core": "^4.3.2",
     "audit-ci": "^2.3.0",
@@ -197,7 +198,7 @@
   "release": {
     "ci": true,
     "debug": false,
-    "dryRun": false,
+    "dryRun": true,
     "branches": [
       "+([1-9])?(.{+([1-9]),x}).x",
       "release",
@@ -212,6 +213,7 @@
         "prerelease": true
       }
     ],
+    "extends": "@jedmao/semantic-release-npm-github-config",
     "analyzeCommits": "simple-commit-message"
   }
 }
